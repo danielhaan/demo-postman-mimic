@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*********************
+*   JSON PRETTY
+*/
+
+.key {
+  color: #ec3c44;
+}
+
+.value {
+  color: #17b045;
+}
+
+.json-line {
+  font-family: monospace;
+  color: #666;
+}
+
+/**********************/
+
+.top-space {
+  margin-top: 30px;
+}
+
+.form-control {
+  display: inline!important;
+  width: 50%!important;
+}
+
+.input-group {
+  width: 100%;
+}

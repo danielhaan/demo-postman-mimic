@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row top-space">
+    <h1 class="col-md-12">
+      {{title}}
+    </h1>
+  </div>
+  <div class="row top-space">
+    <div class="col-md-12">
+      <sk-key-value-form
+        *ngFor="let kvp of kvps; let last = last; let i = index;"
+        [key]="kvp"
+        [checked]="checked[i]"
+        #lastItem
+        (keypress)="addTokvps($event, lastItem.keyInput.nativeElement, last)">
+      </sk-key-value-form>
+    </div>
+  </div>
+  <div class="row top-space">
+    <div class="col-md-12">
+      <sk-json-output [json]="testJson"></sk-json-output>
+    </div>
+  </div>
+</div>
